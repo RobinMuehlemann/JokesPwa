@@ -1,6 +1,7 @@
 <div class="title-wrapper">
-  <h2>Chuck Norris Jokes!</h2>
+  <h2>Chuck Norris</h2>
 </div>
+<mat-spinner style="margin:100px auto 0 auto;" *ngIf="!this.chuckNorrisJoke"></mat-spinner>
 <div *ngIf="this.chuckNorrisJoke" class="joke-wrapper">
   <p>{{chuckNorrisJoke.value}}</p>
   <button class="button" (click)="this.loadNextJoke()">NEXT</button>
