@@ -16,7 +16,7 @@ export class DataService {
     return this.http.get('https://api.tronalddump.io/random/quote');
   }
 
-  getRandomCatImage() {
+  public getRandomCatImage() {
     return this.http.get('https://api.thecatapi.com/v1/images/search?format=json');
   }
 }

@@ -32,9 +32,17 @@
   "dataGroups": [
     {
       "name": "Chuck-Norris-Joke",
-      "urls": [
-        "https://api.chucknorris.io/jokes/random",
-        "https://api.tronalddump.io/random/quote"],
+      "urls": ["https://api.chucknorris.io/jokes/random"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "Cat",
+      "urls": ["https://api.thecatapi.com/v1/images/search?format=json"],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 20,
