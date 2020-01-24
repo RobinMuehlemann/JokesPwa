@@ -9,7 +9,7 @@ export class CheckerService {
 
   constructor(public updates: SwUpdate) {
     if (updates.isEnabled) {
-      interval(6).subscribe(() => updates.checkForUpdate()
+      interval(6 * 60 * 60).subscribe(() => updates.checkForUpdate()
         .then(() => console.log('checking for updates')));
     }
   }

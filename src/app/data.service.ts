@@ -15,4 +15,8 @@ export class DataService {
   public getTrumpJoke() {
     return this.http.get('https://api.tronalddump.io/random/quote');
   }
+
+  getRandomCatImage() {
+    return this.http.get('https://api.thecatapi.com/v1/images/search?format=json');
+  }
 }

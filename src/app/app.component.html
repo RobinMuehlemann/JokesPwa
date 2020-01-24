@@ -8,9 +8,11 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button mat-button (click)="sidenav.open()" class="toggleButton"><i class="material-icons">
+    <div class="toggleButton-wrapper">
+      <button mat-button (click)="sidenav.open()" class="toggleButton"><i class="material-icons">
       menu
-    </i></button>
+      </i></button>
+    </div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

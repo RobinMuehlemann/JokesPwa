@@ -32,7 +32,9 @@
   "dataGroups": [
     {
       "name": "Chuck-Norris-Joke",
-      "urls": ["https://api.chucknorris.io/jokes/random"],
+      "urls": [
+        "https://api.chucknorris.io/jokes/random",
+        "https://api.tronalddump.io/random/quote"],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 20,

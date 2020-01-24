@@ -1,0 +1,8 @@
+<div class="title-wrapper">
+  <h2>Trump jokes / quotes</h2>
+</div>
+<div *ngIf="this.trumpJoke" class="joke-wrapper">
+  <p>{{trumpJoke.value}}</p>
+  <p>{{trumpJoke.appeared_at | date}}</p>
+  <button class="button" (click)="this.loadNextJoke()">NEXT</button>
+</div>

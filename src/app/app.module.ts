@@ -13,13 +13,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import {SideContentComponent} from './side-content/side-content.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
+import {TrumpComponent} from './trump/trump.component';
+import {RandomCatComponent} from './random-cat/random-cat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChuckNorrisComponent,
     SideContentComponent,
-    LandingPageComponent],
+    LandingPageComponent,
+    TrumpComponent,
+    RandomCatComponent
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
