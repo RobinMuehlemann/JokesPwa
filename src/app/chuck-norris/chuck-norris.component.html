@@ -1,0 +1,5 @@
+<h2>Chuck Norris Jokes!</h2>
+<div *ngIf="this.chuckNorrisJoke" class="joke-wrapper">
+  <p>{{chuckNorrisJoke.value}}</p>
+  <button class="button" (click)="this.loadNextJoke()">NEXT</button>
+</div>
