@@ -14,6 +14,13 @@
   height: 50px;
   font-size: 20px;
   border-radius: 10px;
+  position:absolute;
+  bottom:0px;
+  right:50%;
+  left:50%;
+  margin-left:-150px;
+  margin-bottom: 20px;
+
 }
 .title-wrapper{
   padding: 0 20px 0 20px;
@@ -42,10 +49,11 @@ html{
   }
   height: 100%;
 }
-/*-- Tablets --*/
-/*-- SPhone --*/
 /*-- SPhone --*/
 @media screen and (max-width: 500px) {
+  h2{
+    margin: 0;
+  }
   .img-wrapper{
     padding: 0px !important;
   }
@@ -61,5 +69,10 @@ html{
     left:50%;
     margin-left:-150px;
     margin-bottom: 20px;
+  }
+  .joke-wrapper{
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
   }
 }

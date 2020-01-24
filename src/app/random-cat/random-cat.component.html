@@ -1,10 +1,11 @@
 <div class="title-wrapper">
   <h2>Random cat images</h2>
 </div>
-<div *ngIf="this.randomCatImage" class="joke-wrapper">
+<mat-spinner *ngIf="this.loading" style="margin:0 auto;"></mat-spinner>
+<div *ngIf="this.randomCatImage[0].url" class="joke-wrapper">
   <div class="img-wrapper">
     <img class="img" src="{{this.randomCatImage[0].url}}">
   </div>
-  <button class="button" (click)="this.loadNextImage()">NEXT</button>
 </div>
+<button class="button" (click)="this.loadNextImage()">NEXT</button>
 

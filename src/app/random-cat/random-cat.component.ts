@@ -9,6 +9,7 @@ import {DataService} from '../data.service';
 })
 export class RandomCatComponent implements OnInit {
   randomCatImage: any;
+  loading = true;
 
   constructor(private checker: CheckerService, private dataService: DataService) {
     this.checker.checkForUpdates();
@@ -17,12 +18,16 @@ export class RandomCatComponent implements OnInit {
   ngOnInit() {
     this.dataService.getRandomCatImage().subscribe( image => {
       this.randomCatImage = image;
+      this.loading = false;
     });
   }
 
   loadNextImage() {
+    this.randomCatImage[0].url = undefined;
+    this.loading = true;
     this.dataService.getRandomCatImage().subscribe(image => {
       this.randomCatImage = image;
+      this.loading = false;
     });
   }
 }

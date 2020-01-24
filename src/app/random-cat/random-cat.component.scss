@@ -6,4 +6,6 @@
   width: auto;
   margin: auto;
 }
-
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: white;
+}
