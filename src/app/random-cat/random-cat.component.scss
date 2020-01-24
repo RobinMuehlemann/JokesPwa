@@ -4,8 +4,17 @@
 .img{
   max-height: 400px;
   width: auto;
-  margin: auto;
 }
 ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
   stroke: white;
 }
+@media screen and (max-width: 500px) {
+  .joke-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    max-height: 550px;
+  }
+}
+

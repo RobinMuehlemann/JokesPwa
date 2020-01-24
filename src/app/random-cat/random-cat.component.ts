@@ -18,6 +18,7 @@ export class RandomCatComponent implements OnInit {
   ngOnInit() {
     this.dataService.getRandomCatImage().subscribe( image => {
       this.randomCatImage = image;
+      console.log(image);
       this.loading = false;
     });
   }
